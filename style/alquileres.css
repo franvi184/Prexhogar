@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.my-navbar {
+    background-color: coral !important;
+}
+
+.logo {
+    max-width: 80px;
+    min-width: 80px;
+    object-fit: cover;
+}
+
+.contAlquiler1, .contAlquiler2, .contAlquiler3 {
+    display: flex;
+    border: solid 3px black;
+    border-radius: 15px;
+    min-height: 400px;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    background-color: coral;
+    font-size: 20px;
+}
+
+.contAlquiler1 img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: auto;
+    width: 35%;
+    margin: 20px;
+}
+
+.contAlquiler2 img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: auto;
+    width: 35%;
+    margin: 20px;
+}
+
+.contAlquiler3 img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.divPrecio {
+    display: flex;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 20px;
+}
