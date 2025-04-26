@@ -31,7 +31,6 @@
 }
 
 .contenedorPrincipal img {
-    display: block;
     width: 100%;
     height: auto;
     border: solid black 3px;
@@ -124,4 +123,37 @@
     border-radius: 15px;
 }
 
+.carousel{
+    display: none;
+}
 
+/* media queries */
+
+@media (max-width: 768px) {
+    .contenedorPrincipal {
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "texto"
+        "parrafo"
+        "aliados";
+        grid-template-columns: 1fr;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorInterno, .pAlquileres, .pContactos, .pSumate{
+        display: none;
+    }
+
+    .oficinaImg {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+        grid-area: aliados;
+    }
+}
