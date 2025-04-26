@@ -14,6 +14,10 @@
     object-fit: cover;
 }
 
+.text {
+    display: none;
+}
+
 .contAlquiler1, .contAlquiler2, .contAlquiler3 {
     display: flex;
     border: solid 3px black;
@@ -59,4 +63,71 @@
     border-radius: 15px;
     text-align: center;
     margin-right: 20px;
+}
+
+.contAlquiler1 {
+    grid-area: alq1;
+}
+
+.contAlquiler2 {
+    grid-area: alq2;
+}
+
+.contAlquiler3 {
+    grid-area: alq3;
+}
+
+@media (max-width: 768px) {
+    .contPrincipal {
+        display: grid;
+        grid-template-areas: 
+        "alq1"
+        "alq2"
+        "alq3";
+        width: 100%;
+    }
+
+    .contAlquiler1, .contAlquiler2, .contAlquiler3 {
+        flex-direction: column;
+    }
+
+    .contAlquiler1 img {
+        object-fit: cover;
+        border-radius: 15px;
+        height: auto;
+        width: 80%;
+        margin: 20px;
+    }
+
+    .contAlquiler2 img {
+        object-fit: cover;
+        border-radius: 15px;
+        height: auto;
+        width: 80%;
+        margin: 20px;
+    }
+
+    .contAlquiler3 img {
+        object-fit: cover;
+        border-radius: 15px;
+        height: auto;
+        width: 85%;
+        margin: 20px;
+    }
+
+    .divPrecio {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        display: block;
+        border: solid 3px black;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 15px;
+        background-color: coral;
+        margin: 15px 10px 0px 10px;
+    }
+
 }
