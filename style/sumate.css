@@ -31,3 +31,12 @@
     background-color: coral;
     border: solid 3px black;
 }
+
+footer {
+    background-color: coral;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

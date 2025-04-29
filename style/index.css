@@ -127,6 +127,14 @@
     display: none;
 }
 
+footer {
+    background-color: coral;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {

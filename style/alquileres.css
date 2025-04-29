@@ -77,6 +77,15 @@
     grid-area: alq3;
 }
 
+footer {
+    background-color: coral;
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 @media (max-width: 768px) {
     .contPrincipal {
         display: grid;
