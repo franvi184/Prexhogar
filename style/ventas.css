@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.my-navbar {
-    background-color: coral !important;
+.my-navbar .container-fluid {
+    background-color: coral;
 }
 
 .logo {
@@ -32,14 +32,40 @@
 }
 
 .my-boton {
-    background-color:  coral !important;
+    background-color:  coral;
 }
 
 footer {
-    background-color: coral;
-    text-align: center;
-    height: auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    min-height: 130px;
+    background-color: coral;
+    border: solid 3px black;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100%;
+    width: 50%;
+}
+
+footer img {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+}
+
+footer div  {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    width: 50%;
+    height: auto;
+    color: black;
 }
