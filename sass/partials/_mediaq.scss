@@ -95,7 +95,7 @@
     //sumate
     .formulario{
         display: block;
-        width: 100%;
+        max-width: 100%;
         border: $borde;
         border-radius: $radius;
         h1 {
@@ -110,6 +110,7 @@
     //contactos
 
     .mapa {
+        max-width: 100%;
         height: auto;
         width: 100%;
         margin: 0;
