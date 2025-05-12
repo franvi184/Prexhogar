@@ -141,7 +141,7 @@
 }
 
 .contPrincipal {
-    .contAlquiler1, .contAlquiler2, .contAlquiler3 {
+    .contAlquiler1{
         display: flex;
         border: $borde;
         border-radius: $radius;
@@ -154,6 +154,11 @@
         background-color: $color-principal;
         font-size: 20px;
     }
+
+    .contAlquiler2, .contAlquiler3 {
+        @extend .contAlquiler1
+    }
+
     .contAlquiler1 img:hover,
     .contAlquiler2 img:hover,
     .contAlquiler3 img:hover{
@@ -191,6 +196,43 @@
     .contAlquiler3 {
         grid-area: alq3;
     }
+}
+
+//contactos
+
+.mapa {
+    background-color: coral;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 3px black;
+    width: 50%;
+    min-height: 400px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+//sumate 
+
+.formulario {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+    margin-top: 30px;
+    padding: 40px;
+    min-height: 500px;
+    font-size: 20px;
+    h1 {
+        background-color: coral;
+        border: solid 3px black;
+        text-align: center;
+}
 }
 
 .carrusel1 {

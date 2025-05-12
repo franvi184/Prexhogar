@@ -177,7 +177,7 @@
   text-align: center;
   margin-right: 20px;
 }
-.contPrincipal .contAlquiler1 {
+.contPrincipal .contAlquiler1, .contPrincipal .contAlquiler2, .contPrincipal .contAlquiler3 {
   grid-area: alq1;
 }
 .contPrincipal .contAlquiler2 {
@@ -185,6 +185,38 @@
 }
 .contPrincipal .contAlquiler3 {
   grid-area: alq3;
+}
+
+.mapa {
+  background-color: coral;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: solid 3px black;
+  width: 50%;
+  min-height: 400px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px black;
+  margin-top: 30px;
+  padding: 40px;
+  min-height: 500px;
+  font-size: 20px;
+}
+.formulario h1 {
+  background-color: coral;
+  border: solid 3px black;
+  text-align: center;
 }
 
 .carrusel1 {
@@ -255,10 +287,10 @@ footer div {
     grid-template-areas: "alq1" "alq2" "alq3";
     width: 100%;
   }
-  .contAlquiler1, .contAlquiler2, .contAlquiler3 {
+  .contAlquiler1, .contPrincipal .contAlquiler2, .contPrincipal .contAlquiler3, .contAlquiler2, .contAlquiler3 {
     flex-direction: column;
   }
-  .contAlquiler1 img {
+  .contAlquiler1 img, .contPrincipal .contAlquiler2 img, .contPrincipal .contAlquiler3 img {
     object-fit: cover;
     border-radius: 15px;
     height: auto;
@@ -291,6 +323,34 @@ footer div {
     margin-top: 15px;
     background-color: coral;
     margin: 15px 10px 0px 10px;
+  }
+  .formulario {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    border: solid 3px black;
+    border-radius: 15px;
+  }
+  .formulario h1 {
+    border-radius: 15px;
+  }
+  .formulario textarea,
+  .formulario input {
+    width: 100%;
+  }
+  .mapa {
+    height: auto;
+    width: 100%;
+  }
+  .mapa iframe {
+    height: 300px;
+    width: 100%;
+  }
+  .mapa .info {
+    list-style-type: none;
+  }
+  .mapa .info .info1 {
+    list-style-type: square;
   }
 }
 

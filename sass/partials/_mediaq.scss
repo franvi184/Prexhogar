@@ -1,4 +1,7 @@
+@import "./variables";
+
 @media (max-width: 768px) {
+    //index
     .contenedorPrincipal {
         display: grid;
         grid-template-areas: 
@@ -52,7 +55,7 @@
 
     .contAlquiler1 img {
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: $radius;
         height: auto;
         width: 80%;
         margin: 20px;
@@ -60,7 +63,7 @@
 
     .contAlquiler2 img {
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: $radius;
         height: auto;
         width: 80%;
         margin: 20px;
@@ -68,7 +71,7 @@
 
     .contAlquiler3 img {
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: $radius;
         height: auto;
         width: auto;
         margin: 20px;
@@ -81,11 +84,45 @@
 
     .text {
         display: block;
-        border: solid 3px black;
-        border-radius: 15px;
+        border: $borde;
+        border-radius: $radius;
         text-align: center;
         margin-top: 15px;
-        background-color: coral;
+        background-color: $color-principal;
         margin: 15px 10px 0px 10px;
     }
+
+    //sumate
+    .formulario{
+        display: block;
+        width: 100%;
+        margin: 20px;
+        border: $borde;
+        border-radius: $radius;
+        h1 {
+            border-radius: $radius;
+        }
+        textarea,
+        input {
+            width: 100%;
+        }
+    }
+
+    //contactos
+
+    .mapa {
+        height: auto;
+        width: 100%;
+        iframe {
+            height: 300px;
+            width: 100%;
+        }
+        .info {
+            list-style-type: none;
+            .info1 {
+                list-style-type: square;
+            }
+        }
+    }
+
 }
