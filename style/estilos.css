@@ -59,7 +59,7 @@
   min-height: 600px;
   width: 80%;
   font-size: 45px;
-  color: white;
+  color: black;
   justify-self: center;
   align-content: center;
   text-align: center;
@@ -67,7 +67,7 @@
 .contenedorPrincipal .pAlquileres:hover,
 .contenedorPrincipal .pSumate:hover,
 .contenedorPrincipal .pContactos:hover {
-  color: black;
+  color: white;
   transform: scale(1.1, 1.1);
   transition: transform 1s ease-in-out;
 }
@@ -123,7 +123,7 @@
 }
 
 .carrusel2 {
-  max-width: 80%;
+  max-width: 58%;
   height: auto;
   border: solid 3px black;
   border-radius: 15px;
@@ -188,17 +188,30 @@
 }
 
 .mapa {
+  display: flex;
+  flex-direction: column;
   background-color: coral;
-  margin: 20px;
-  padding: 20px;
   border-radius: 15px;
   border: solid 3px black;
-  width: 50%;
-  min-height: 400px;
+  width: 80%;
   justify-self: center;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  margin: 20px;
+}
+.mapa .cuerpo {
+  display: flex;
+  width: 100%;
+}
+.mapa .cuerpo .mapita {
+  display: flex;
+  padding: 10px;
+  width: 50%;
+}
+.mapa .cuerpo .info {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .formulario {
@@ -255,7 +268,7 @@ footer div {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contenedorPrincipal {
     display: grid;
     grid-template-areas: "img1" "texto" "parrafo" "aliados";
@@ -326,8 +339,7 @@ footer div {
   }
   .formulario {
     display: block;
-    width: 100%;
-    margin: 20px;
+    max-width: 100%;
     border: solid 3px black;
     border-radius: 15px;
   }
@@ -339,8 +351,11 @@ footer div {
     width: 100%;
   }
   .mapa {
+    max-width: 100%;
     height: auto;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .mapa iframe {
     height: 300px;

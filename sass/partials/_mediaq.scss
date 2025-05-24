@@ -1,6 +1,6 @@
 @import "./variables";
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     //index
     .contenedorPrincipal {
         display: grid;
@@ -127,4 +127,8 @@
         }
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
 }

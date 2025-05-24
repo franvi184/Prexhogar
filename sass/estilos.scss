@@ -51,7 +51,7 @@
         min-height: 600px;
         width: 80%;
         font-size: 45px;
-        color: white;
+        color: black;
         justify-self: center;
         align-content: center;
         text-align: center;
@@ -59,7 +59,7 @@
     .pAlquileres:hover,
     .pSumate:hover,
     .pContactos:hover {
-    color: black;
+    color: white;
     transform: scale(1.1 ,1.1);
     transition: transform 1s ease-in-out;
     }
@@ -122,7 +122,7 @@
 }
 
 .carrusel2 {
-    max-width: 80%;
+    max-width: 58%;
     height: auto;
     border: $borde;
     border-radius: $radius;
@@ -201,18 +201,31 @@
 //contactos
 
 .mapa {
-    background-color: coral;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    border: solid 3px black;
-    width: 50%;
-    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-principal;
+    border-radius: $radius;
+    border: $borde;
+    width: 80%;
     justify-self: center;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-
+    margin: 20px;
+    .cuerpo {
+        display: flex;
+        width: 100%;
+        .mapita {
+            display: flex;
+            padding: 10px;
+            width: 50%;
+        }
+        .info {
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
 }
 
 //sumate 
