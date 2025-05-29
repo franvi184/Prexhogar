@@ -253,8 +253,6 @@ footer .redes {
   width: 50%;
 }
 footer img {
-  display: flex;
-  flex-direction: row;
   height: auto;
   width: auto;
 }
